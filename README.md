@@ -8,6 +8,10 @@ This website features a filterable gallery displaying pictures categorized into 
 - **Show All**: View all pictures at once with the "Show All" option.
 - **Categorization**: Pictures organized into Boho, Mandala, and Butterfly types.
 - **Responsive Design**: Layout adjusts seamlessly across different devices.
+- **Additional Features**: 
+  - Added title and logo to the website.
+  - Updated design colors for improved visual appeal.
+  - Implemented full-screen image enlargement feature.
 
 ## Technologies Used
 - **HTML/CSS**: Layout and styling of the gallery.
