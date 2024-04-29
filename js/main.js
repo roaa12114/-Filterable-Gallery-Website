@@ -29,3 +29,32 @@ const filterCards = (e) => {
 filterButtons.forEach((button) =>
   button.addEventListener("click", filterCards)
 );
+
+// Get the modal and images
+const modal = document.getElementById("myModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.getElementsByClassName("close")[0];
+const cardsImages = document.querySelectorAll(".card img");
+
+// Open the modal with the clicked image
+function openModal(event) {
+  modal.style.display = "block";
+  modalImg.src = event.target.src;
+}
+
+// Close the modal when the close button is clicked
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+
+// Close the modal when clicked outside the modal
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// Attach click event listener to each image
+cardsImages.forEach((img) => {
+  img.addEventListener("click", openModal);
+});

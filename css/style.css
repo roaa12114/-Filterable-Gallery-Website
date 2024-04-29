@@ -7,14 +7,44 @@
 
 body {
   width: 100vw;
-  background: #dfdfdf;
+  background: #896565;
 }
 
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/* Title */
+.title {
+  color: #dacccc;
+  flex: 1;
+  text-align: center;
+  margin-right: 50px;
+  font-weight: bolder;
+  unicode-bidi: isolate;
+  margin-top: 28px;
+  font-size: 50px;
+  font-style: inherit;
+}
+
+.logo {
+  position: absolute;
+  top: 5px; /* Adjust this value to adjust the distance from the top */
+  right: 2px; /* Adjust this value to adjust the distance from the right */
+  height: 135px;
+  width: 135px;
+  border-radius: 70px;
+  padding: 20px;
+}
 .container {
   position: relative;
   max-width: 1350px;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   margin: 50px auto;
 }
 
@@ -28,7 +58,7 @@ body {
 button {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #fff;
+  background-color: #dacccc;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -36,7 +66,7 @@ button {
 }
 
 button.active {
-  background: darkblue;
+  background: rgb(53, 53, 78);
   color: aliceblue;
 }
 
@@ -50,7 +80,7 @@ button.active {
 
 .card {
   flex-basis: 300px;
-  background-color: #fff;
+  background-color: #dacccc;
   padding: 3px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.05);
@@ -80,4 +110,37 @@ button.active {
 .card-text {
   font-size: 16px;
   color: #333;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
 }
